@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>SurveyForm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">placeholder</h1>
+    <p id="description">placeholder</p>
+    <form id="survey-form">
+      
+      <fieldset><!--fillinarea-->
+        <label id="name-label">Enter Your Name: <input id="name" name="first-name" type="text" placeholder="John Smith"required /></label>
+        <label id="email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="Example@email.com" required /></label>
+        <label id="number-label">Enter Your Number: <input id="number" name="number" type="number" placeholder="Age" required min="16" max="100"/></label>
+</fieldset>
+
+<fieldset><!--dropdown-->
+        <label for="dropdown">How did you hear about us?
+          <select id="dropdown" name="dropdown">
+            <option value="0">(select one)</option>
+            <option value="1">placeholder</option>
+            <option value="2">placeholder</option>
+            <option value="3">placeholder</option>
+            <option value="4">placeholder</option>
+          </select>
+</fieldset>
+
+      <fieldset><!--radios-->
+        <legend>Account type (required)</legend>
+        <label for="pers"><input id="pers" type="radio" name="account-type" class="inline" value="placeholder" checked /> Placeholder</label>
+        <label for="busi"><input id="busi" type="radio" name="account-type" class="inline" value="placeholder"/> Placeholder</label>
+      </fieldset>
+
+      <fieldset><!--checkboxes-->
+        <legend>Account type (required)</legend>
+        <label for="pers"><input id="pers" type="checkbox" name="account-type" class="inline" value="placeholder9" checked /> Placeholder</label>
+        <label for="busi"><input id="busi" type="checkbox" name="account-type" class="inline" value="placeholder9"/> Placeholder</label>
+      </fieldset>
+
+<fieldset> <!--textarea-->
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="placeholderplaceholderplaceholder"></textarea>
+        </label>
+</fieldset>
+
+<fieldset><!--TC and sum=bmit-->
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" value="tc" required name="terms-and-conditions" /> I accept the <a href="https://en.wikipedia.org/wiki/Bart_Simpson">terms and conditions</a>
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+</fieldset>
+
+    </form>
+</body>
+</html>
